@@ -1,0 +1,3056 @@
+[
+	{
+		"name": "Abyssal Chicken",
+		"source": "BGDIA",
+		"page": 97,
+		"size": "T",
+		"type": {
+			"type": "fiend",
+			"tags": [
+				"demon"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			{
+				"ac": 13,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 10,
+			"formula": "3d4 + 3"
+		},
+		"speed": {
+			"walk": 30,
+			"fly": {
+				"number": 30,
+				"condition": "(see bad flier below)"
+			}
+		},
+		"str": 6,
+		"dex": 14,
+		"con": 13,
+		"int": 4,
+		"wis": 9,
+		"cha": 5,
+		"senses": [
+			"blindsight 30ft. (blind beyond this radius)"
+		],
+		"passive": 9,
+		"resist": [
+			"cold",
+			"fire",
+			"lightning"
+		],
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"blinded",
+			"poisoned"
+		],
+		"languages": [
+			"understands Abyssal but can't speak"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Bad Flier",
+				"entries": [
+					"The abyssal chicken falls at the end of a turn if it's airborne and the only thing holding it aloft is its flying speed."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Multiattack",
+				"entries": [
+					"The abyssal chicken makes two attacks: one with its bite and one with its claws."
+				]
+			},
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+				]
+			},
+			{
+				"name": "Claws",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+				]
+			}
+		],
+		"familiar": true,
+		"senseTags": [
+			"B"
+		],
+		"actionTags": [
+			"Multiattack"
+		],
+		"languageTags": [
+			"AB",
+			"CS"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Almiraj",
+		"source": "ToA",
+		"page": 211,
+		"size": "S",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 3,
+			"formula": "1d6"
+		},
+		"speed": {
+			"walk": 50
+		},
+		"str": 2,
+		"dex": 16,
+		"con": 10,
+		"int": 2,
+		"wis": 14,
+		"cha": 10,
+		"skill": {
+			"perception": "+4",
+			"stealth": "+5"
+		},
+		"senses": [
+			"darkvision 30 ft."
+		],
+		"passive": 14,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Keen Senses",
+				"entries": [
+					"The almiraj has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
+				]
+			},
+			{
+				"name": "Familiar",
+				"entries": [
+					"With the DM's permission, the {@spell find familiar} spell can summon an almiraj."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Horn",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+				]
+			}
+		],
+		"familiar": true,
+		"traitTags": [
+			"Keen Senses"
+		],
+		"senseTags": [
+			"D"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Bat",
+		"source": "MM",
+		"page": 318,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "CoS"
+			},
+			{
+				"source": "ToA"
+			},
+			{
+				"source": "WDMM"
+			},
+			{
+				"source": "IDRotF"
+			},
+			{
+				"source": "WBtW"
+			}
+		],
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 5,
+			"fly": 30
+		},
+		"str": 2,
+		"dex": 15,
+		"con": 8,
+		"int": 2,
+		"wis": 12,
+		"cha": 4,
+		"senses": [
+			"blindsight 60 ft."
+		],
+		"passive": 11,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Echolocation",
+				"entries": [
+					"The bat can't use its blindsight while {@condition deafened}."
+				]
+			},
+			{
+				"name": "Keen Hearing",
+				"entries": [
+					"The bat has advantage on Wisdom ({@skill Perception}) checks that rely on hearing."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 0} to hit, reach 5 ft., one creature. {@h}1 piercing damage."
+				]
+			}
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/bat.mp3"
+		},
+		"traitTags": [
+			"Keen Senses"
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Cat",
+		"source": "MM",
+		"page": 320,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "CoS"
+			},
+			{
+				"source": "HotDQ"
+			},
+			{
+				"source": "SKT"
+			},
+			{
+				"source": "ToA"
+			},
+			{
+				"source": "WDH"
+			},
+			{
+				"source": "IMR"
+			},
+			{
+				"source": "IDRotF"
+			},
+			{
+				"source": "TCE"
+			},
+			{
+				"source": "CM"
+			},
+			{
+				"source": "WBtW"
+			}
+		],
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 2,
+			"formula": "1d4"
+		},
+		"speed": {
+			"walk": 40,
+			"climb": 30
+		},
+		"str": 3,
+		"dex": 15,
+		"con": 10,
+		"int": 3,
+		"wis": 12,
+		"cha": 7,
+		"skill": {
+			"perception": "+3",
+			"stealth": "+4"
+		},
+		"passive": 13,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Keen Smell",
+				"entries": [
+					"The cat has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Claws",
+				"entries": [
+					"{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}1 slashing damage."
+				]
+			}
+		],
+		"environment": [
+			"desert",
+			"forest",
+			"grassland",
+			"urban"
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/cat.mp3"
+		},
+		"traitTags": [
+			"Keen Senses"
+		],
+		"damageTags": [
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Chimeric Rat",
+		"source": "IDRotF",
+		"page": 246,
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 20
+		},
+		"str": 2,
+		"dex": 11,
+		"con": 9,
+		"int": 2,
+		"wis": 10,
+		"cha": 4,
+		"senses": [
+			"darkvision 30 ft."
+		],
+		"passive": 10,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Keen Smell",
+				"entries": [
+					"The rat has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+				]
+			},
+			{
+				"name": "Chimeric Creation",
+				"entries": [
+					"The rat has gills, iridescent scales, and the ability to breathe air and water."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+				]
+			}
+		],
+		"familiar": true,
+		"traitTags": [
+			"Keen Senses"
+		],
+		"senseTags": [
+			"D"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Crab",
+		"source": "MM",
+		"page": 320,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "ToA"
+			},
+			{
+				"source": "GoS"
+			},
+			{
+				"source": "BGDIA"
+			}
+		],
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			{
+				"ac": 11,
+				"from": [
+					"natural armor"
+				]
+			}
+		],
+		"hp": {
+			"average": 2,
+			"formula": "1d4"
+		},
+		"speed": {
+			"walk": 20,
+			"swim": 20
+		},
+		"str": 2,
+		"dex": 11,
+		"con": 10,
+		"int": 1,
+		"wis": 8,
+		"cha": 2,
+		"skill": {
+			"stealth": "+2"
+		},
+		"senses": [
+			"blindsight 30 ft."
+		],
+		"passive": 9,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Amphibious",
+				"entries": [
+					"The crab can breathe air and water."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Claw",
+				"entries": [
+					"{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}1 bludgeoning damage."
+				]
+			}
+		],
+		"environment": [
+			"coastal"
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/crab.mp3"
+		},
+		"traitTags": [
+			"Amphibious"
+		],
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Crow",
+		"source": "WDMM",
+		"page": 302,
+		"hasToken": true,
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 10,
+			"fly": 50
+		},
+		"str": 2,
+		"dex": 14,
+		"con": 8,
+		"int": 2,
+		"wis": 12,
+		"cha": 6,
+		"skill": {
+			"perception": "+3"
+		},
+		"passive": 13,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Mimicry",
+				"entries": [
+					"The crow can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom (Insight) check."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Beak",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+				]
+			}
+		],
+		"familiar": true,
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Falcon",
+		"source": "WDH",
+		"page": 53,
+		"hasToken": true,
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 10,
+			"fly": 60
+		},
+		"str": 5,
+		"dex": 16,
+		"con": 8,
+		"int": 2,
+		"wis": 14,
+		"cha": 6,
+		"skill": {
+			"perception": "+4"
+		},
+		"passive": 14,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Keen Sight",
+				"entries": [
+					"The falcon has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Talons",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}1 slashing damage."
+				]
+			}
+		],
+		"familiar": true,
+		"traitTags": [
+			"Keen Senses"
+		],
+		"damageTags": [
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Fish",
+		"source": "GoS",
+		"page": 224,
+		"damageTags": [],
+		"miscTags": [],
+		"hasToken": true,
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"swim": 40
+		},
+		"str": 2,
+		"dex": 16,
+		"con": 9,
+		"int": 1,
+		"wis": 7,
+		"cha": 2,
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 8,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Water Breathing",
+				"entries": [
+					"The fish can breathe only underwater."
+				]
+			}
+		],
+		"familiar": true,
+		"traitTags": [
+			"Water Breathing"
+		],
+		"senseTags": [
+			"D"
+		]
+	},
+	{
+		"name": "Flying Monkey",
+		"source": "ToA",
+		"page": 220,
+		"size": "S",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 3,
+			"formula": "1d6"
+		},
+		"speed": {
+			"walk": 30,
+			"climb": 20,
+			"fly": 30
+		},
+		"str": 8,
+		"dex": 14,
+		"con": 11,
+		"int": 5,
+		"wis": 12,
+		"cha": 6,
+		"passive": 11,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Pack Tactics",
+				"entries": [
+					"The flying monkey has advantage on an attack roll against a creature if at least one of the monkey's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+				]
+			},
+			{
+				"name": "Familiar",
+				"entries": [
+					"With the DM's permission, the {@spell find familiar} spell can summon a flying monkey."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 1} to hit, reach 5 ft., one target {@h}1 ({@damage 1d4 - 1}) piercing damage."
+				]
+			}
+		],
+		"familiar": true,
+		"traitTags": [
+			"Pack Tactics"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Fox",
+		"source": "IDRotF",
+		"page": 288,
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 2,
+			"formula": "1d4"
+		},
+		"speed": {
+			"walk": 30,
+			"burrow": 5
+		},
+		"str": 2,
+		"dex": 16,
+		"con": 11,
+		"int": 3,
+		"wis": 12,
+		"cha": 6,
+		"skill": {
+			"perception": "+3",
+			"stealth": "+5"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 13,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Keen Hearing",
+				"entries": [
+					"The fox has advantage on Wisdom (Perception) checks that rely on hearing."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}1 piercing damage."
+				]
+			}
+		],
+		"familiar": true,
+		"traitTags": [
+			"Keen Senses"
+		],
+		"senseTags": [
+			"D"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Frog",
+		"source": "MM",
+		"page": 322,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "ToA"
+			},
+			{
+				"source": "CoS"
+			},
+			{
+				"source": "WBtW"
+			}
+		],
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			11
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 20,
+			"swim": 20
+		},
+		"str": 1,
+		"dex": 13,
+		"con": 8,
+		"int": 1,
+		"wis": 8,
+		"cha": 3,
+		"skill": {
+			"perception": "+1",
+			"stealth": "+3"
+		},
+		"senses": [
+			"darkvision 30 ft."
+		],
+		"passive": 11,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Amphibious",
+				"entries": [
+					"The frog can breathe air and water."
+				]
+			},
+			{
+				"name": "Standing Leap",
+				"entries": [
+					"The frog's long jump is up to 10 feet and its high jump is up to 5 feet, with or without a running start."
+				]
+			}
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/frog.mp3"
+		},
+		"traitTags": [
+			"Amphibious"
+		],
+		"senseTags": [
+			"D"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Gazer",
+		"group": "Beholders",
+		"source": "VGM",
+		"page": 126,
+		"otherSources": [
+			{
+				"source": "WDH"
+			}
+		],
+		"size": "T",
+		"type": "aberration",
+		"alignment": [
+			"N",
+			"E"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 13,
+			"formula": "3d4 + 6"
+		},
+		"speed": {
+			"walk": 0,
+			"fly": {
+				"number": 30,
+				"condition": "(hover)"
+			},
+			"canHover": true
+		},
+		"str": 3,
+		"dex": 17,
+		"con": 14,
+		"int": 3,
+		"wis": 10,
+		"cha": 7,
+		"save": {
+			"wis": "+2"
+		},
+		"skill": {
+			"perception": "+4",
+			"stealth": "+5"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 14,
+		"conditionImmune": [
+			"prone"
+		],
+		"cr": "1/2",
+		"trait": [
+			{
+				"name": "Aggressive",
+				"entries": [
+					"As a bonus action, the gazer can move up to its speed toward a hostile creature that it can see."
+				]
+			},
+			{
+				"name": "Mimicry",
+				"entries": [
+					"The gazer can mimic simple sounds of speech it has heard, in any language. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom (Insight) check."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+				]
+			},
+			{
+				"name": "Eye Rays",
+				"entries": [
+					"The gazer shoots two of the following magical eye rays at random (reroll duplicates), choosing one or two targets it can see within 60 feet of it:",
+					{
+						"type": "list",
+						"style": "list-hang-notitle",
+						"items": [
+							{
+								"type": "item",
+								"name": "1. Dazing Ray.",
+								"style": "italic",
+								"entry": "The targeted creature must succeed on a {@dc 12} Wisdom saving throw or be {@condition charmed} until the start of the gazer's next turn. While the target is {@condition charmed} in this way, its speed is halved, and it has disadvantage on attack rolls."
+							},
+							{
+								"type": "item",
+								"name": "2. Fear Ray.",
+								"style": "italic",
+								"entry": "The targeted creature must succeed on a {@dc 12} Wisdom saving throw or be {@condition frightened} until the start of the gazer's next turn."
+							},
+							{
+								"type": "item",
+								"name": "3. Frost Ray.",
+								"style": "italic",
+								"entry": "The targeted creature must succeed on a {@dc 12} Dexterity saving throw or take 10 ({@damage 3d6}) cold damage."
+							},
+							{
+								"type": "item",
+								"name": "4. Telekinetic Ray.",
+								"style": "italic",
+								"entries": [
+									"If the target is a creature that is Medium or smaller, it must succeed on a {@dc 12} Strength saving throw or be moved up to 30 feet directly away from the gazer.",
+									"If the target is an object weighing 10 pounds or less that isn't being worn or carried, the gazer moves it up to 30 feet in any direction. The gazer can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a container."
+								]
+							}
+						]
+					}
+				]
+			}
+		],
+		"variant": [
+			{
+				"type": "variant",
+				"name": "Gazer Familiar",
+				"entries": [
+					"Spellcasters who are interested in unusual familiars find that gazers are eager to serve someone who has magical power, especially those who make a point of bullying and harassing others. The gazer behaves aggressively toward creatures smaller than itself, and it tends to randomly attack house pets, farm animals, and even children in town unless its master is very strict. A gazer serving as a familiar has the following trait.",
+					{
+						"type": "entries",
+						"name": "Familiar",
+						"entries": [
+							"The gazer can serve another creature as a familiar, forming a telepathic bond with its willing master, provided that the master is at least a 3rd-level spellcaster. While the two are bonded, the master can sense what the gazer senses as long as they are within 1 mile of each other. If its master causes it physical harm, the gazer will end its service as a familiar, breaking the telepathic bond."
+						]
+					}
+				]
+			}
+		],
+		"environment": [
+			"underdark"
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/gazer.mp3"
+		},
+		"traitTags": [
+			"Aggressive"
+		],
+		"senseTags": [
+			"D"
+		],
+		"damageTags": [
+			"C",
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"charmed",
+			"frightened"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Hare",
+		"source": "IDRotF",
+		"page": 294,
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 20,
+			"burrow": 5
+		},
+		"str": 1,
+		"dex": 17,
+		"con": 9,
+		"int": 2,
+		"wis": 11,
+		"cha": 4,
+		"skill": {
+			"perception": "+2",
+			"stealth": "+5"
+		},
+		"passive": 12,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Escape",
+				"entries": [
+					"The hare can take the Dash, Disengage, or Hide action as a bonus action on each of its turns."
+				]
+			}
+		],
+		"familiar": true,
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Hawk",
+		"source": "MM",
+		"page": 330,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "WDH"
+			},
+			{
+				"source": "BGDIA"
+			},
+			{
+				"source": "IDRotF"
+			},
+			{
+				"source": "CM"
+			},
+			{
+				"source": "WBtW"
+			}
+		],
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 10,
+			"fly": 60
+		},
+		"str": 5,
+		"dex": 16,
+		"con": 8,
+		"int": 2,
+		"wis": 14,
+		"cha": 6,
+		"skill": {
+			"perception": "+4"
+		},
+		"passive": 14,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Keen Sight",
+				"entries": [
+					"The hawk has advantage on Wisdom ({@skill Perception}) checks that rely on sight."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Talons",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}1 slashing damage."
+				]
+			}
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/hawk.mp3"
+		},
+		"traitTags": [
+			"Keen Senses"
+		],
+		"damageTags": [
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Imp",
+		"source": "MM",
+		"page": 76,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "CoS"
+			},
+			{
+				"source": "SKT"
+			},
+			{
+				"source": "ToA"
+			},
+			{
+				"source": "WDH"
+			},
+			{
+				"source": "GoS"
+			},
+			{
+				"source": "BGDIA"
+			},
+			{
+				"source": "EGW"
+			},
+			{
+				"source": "TCE"
+			},
+			{
+				"source": "CM"
+			}
+		],
+		"size": "T",
+		"type": {
+			"type": "fiend",
+			"tags": [
+				"devil"
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 10,
+			"formula": "3d4 + 3"
+		},
+		"speed": {
+			"walk": 20,
+			"fly": 40
+		},
+		"str": 6,
+		"dex": 17,
+		"con": 13,
+		"int": 11,
+		"wis": 12,
+		"cha": 14,
+		"skill": {
+			"deception": "+4",
+			"insight": "+3",
+			"persuasion": "+4",
+			"stealth": "+5"
+		},
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"passive": 11,
+		"resist": [
+			"cold",
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks not made with silvered weapons",
+				"cond": true
+			}
+		],
+		"immune": [
+			"fire",
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"languages": [
+			"Infernal",
+			"Common"
+		],
+		"cr": "1",
+		"trait": [
+			{
+				"name": "Shapechanger",
+				"entries": [
+					"The imp can use its action to polymorph into a beast form that resembles a rat (speed 20 ft.), a raven (20 ft., fly 60 ft.), or a spider (20 ft., climb 20 ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+				]
+			},
+			{
+				"name": "Devil's Sight",
+				"entries": [
+					"Magical darkness doesn't impede the imp's darkvision."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The imp has advantage on saving throws against spells and other magical effects."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Sting (Bite in Beast Form)",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save, or half as much damage on a successful one."
+				]
+			},
+			{
+				"name": "Invisibility",
+				"entries": [
+					"The imp magically turns {@condition invisible} until it attacks, or until its concentration ends (as if concentrating on a spell). Any equipment the imp wears or carries is {@condition invisible} with it."
+				]
+			}
+		],
+		"variant": [
+			{
+				"type": "variant",
+				"name": "Imp Familiar",
+				"entries": [
+					"Imps can be found in the service to mortal spellcasters, acting as advisors, spies, and familiars. An imp urges its master to acts of evil, knowing the mortal's soul is a prize the imp might ultimately claim. Imps display an unusual loyalty to their masters, and an imp can be quite dangerous if its master is threatened. Some such imps have the following trait.",
+					{
+						"name": "Familiar",
+						"type": "entries",
+						"entries": [
+							"The imp can enter into a contract to serve another creature as a familiar, forming a telepathic bond with its willing master. While the two are bonded, the master can sense what the imp senses as long as they are within 1 mile of each other. While the imp is within 10 feet of its master, the master shares the imp's Magic Resistance trait. If its master violates the terms of the contract, the imp can end its service as a familiar, ending the telepathic bond."
+						]
+					}
+				]
+			}
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/imp.mp3"
+		},
+		"traitTags": [
+			"Devil's Sight",
+			"Magic Resistance",
+			"Shapechanger"
+		],
+		"senseTags": [
+			"SD"
+		],
+		"languageTags": [
+			"C",
+			"I"
+		],
+		"damageTags": [
+			"I",
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"invisible"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Jot",
+		"isNpc": true,
+		"source": "TftYP",
+		"page": 15,
+		"hasToken": true,
+		"size": "T",
+		"type": {
+			"type": "fiend",
+			"tags": [
+				"demon"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 7,
+			"formula": "3d4"
+		},
+		"speed": {
+			"walk": 40
+		},
+		"str": 5,
+		"dex": 17,
+		"con": 10,
+		"int": 7,
+		"wis": 10,
+		"cha": 10,
+		"skill": {
+			"stealth": "+5"
+		},
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"passive": 10,
+		"resist": [
+			"cold",
+			"fire",
+			"lightning",
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks",
+				"cond": true
+			}
+		],
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"languages": [
+			"Abyssal",
+			"Common"
+		],
+		"cr": "1",
+		"trait": [
+			{
+				"name": "Shapechanger",
+				"entries": [
+					"Jot can use its action to polymorph into a beast form that resembles a bat (speed 10 feet fly 40 ft.), a centipede (40 ft., climb 40 ft.), or a toad (40 ft., swim 40 ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"Jot has advantage on saving throws against spells and other magical effects."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Claw (Bite in Beast Form)",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage, and the target must succeed on a {@dc 10} Constitution saving throw or take 5 ({@damage 2d4}) poison damage and become {@condition poisoned} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+				]
+			},
+			{
+				"name": "Scare (1/Day)",
+				"entries": [
+					"One creature of Jot's choice within 20 feet of it must succeed on a {@dc 10} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if Jot is within line of sight, ending the effect on itself on a success."
+				]
+			},
+			{
+				"name": "Invisibility",
+				"entries": [
+					"Jot magically turns {@condition invisible} until it attacks or uses Scare, or until its concentration ends (as if concentrating on a spell). Any equipment Jot wears or carries is {@condition invisible} with it."
+				]
+			}
+		],
+		"familiar": true,
+		"traitTags": [
+			"Magic Resistance",
+			"Shapechanger"
+		],
+		"senseTags": [
+			"SD"
+		],
+		"languageTags": [
+			"AB",
+			"C"
+		],
+		"damageTags": [
+			"I",
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"frightened",
+			"invisible",
+			"poisoned"
+		]
+	},
+	{
+		"name": "Lizard",
+		"source": "MM",
+		"page": 332,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "ToA"
+			}
+		],
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 2,
+			"formula": "1d4"
+		},
+		"speed": {
+			"walk": 20,
+			"climb": 20
+		},
+		"str": 2,
+		"dex": 11,
+		"con": 10,
+		"int": 1,
+		"wis": 8,
+		"cha": 3,
+		"senses": [
+			"darkvision 30 ft."
+		],
+		"passive": 9,
+		"cr": "0",
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+				]
+			}
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/lizard.mp3"
+		},
+		"senseTags": [
+			"D"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Majesto",
+		"isNpc": true,
+		"source": "CoS",
+		"page": 115,
+		"hasToken": true,
+		"size": "T",
+		"type": {
+			"type": "fiend",
+			"tags": [
+				"devil"
+			]
+		},
+		"alignment": [
+			"L",
+			"E"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 10,
+			"formula": "3d4 + 3"
+		},
+		"speed": {
+			"walk": 20,
+			"fly": 40
+		},
+		"str": 6,
+		"dex": 17,
+		"con": 13,
+		"int": 11,
+		"wis": 12,
+		"cha": 14,
+		"skill": {
+			"deception": "+4",
+			"insight": "+3",
+			"persuasion": "+4",
+			"stealth": "+5"
+		},
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"passive": 11,
+		"resist": [
+			"cold",
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks not made with silvered weapons",
+				"cond": true
+			}
+		],
+		"immune": [
+			"fire",
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"languages": [
+			"Infernal",
+			"Common"
+		],
+		"cr": "1",
+		"trait": [
+			{
+				"name": "Shapechanger",
+				"entries": [
+					"Majesto can use its action to polymorph into a beast form that resembles a rat (speed 20 ft.), a raven (20 ft., fly 60 ft.), or a spider (20 ft., climb 20 ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+				]
+			},
+			{
+				"name": "Devil's Sight",
+				"entries": [
+					"Magical darkness doesn't impede Majesto's darkvision."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"Majesto has advantage on saving throws against spells and other magical effects."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Sting (Bite in Beast Form)",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save, or half as much damage on a successful one."
+				]
+			},
+			{
+				"name": "Invisibility",
+				"entries": [
+					"Majesto magically turns {@condition invisible} until it attacks, or until its concentration ends (as if concentrating on a spell). Any equipment Majesto wears or carries is {@condition invisible} with it."
+				]
+			}
+		],
+		"familiar": true,
+		"traitTags": [
+			"Devil's Sight",
+			"Magic Resistance",
+			"Shapechanger"
+		],
+		"senseTags": [
+			"SD"
+		],
+		"languageTags": [
+			"C",
+			"I"
+		],
+		"damageTags": [
+			"I",
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"invisible"
+		]
+	},
+	{
+		"name": "Octopus",
+		"source": "MM",
+		"page": 333,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "SKT"
+			},
+			{
+				"source": "GoS"
+			},
+			{
+				"source": "IMR"
+			},
+			{
+				"source": "IDRotF"
+			},
+			{
+				"source": "WBtW"
+			}
+		],
+		"size": "S",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 3,
+			"formula": "1d6"
+		},
+		"speed": {
+			"walk": 5,
+			"swim": 30
+		},
+		"str": 4,
+		"dex": 15,
+		"con": 11,
+		"int": 3,
+		"wis": 10,
+		"cha": 4,
+		"skill": {
+			"perception": "+2",
+			"stealth": "+4"
+		},
+		"senses": [
+			"darkvision 30 ft."
+		],
+		"passive": 12,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Hold Breath",
+				"entries": [
+					"While out of water, the octopus can hold its breath for 30 minutes."
+				]
+			},
+			{
+				"name": "Underwater Camouflage",
+				"entries": [
+					"The octopus has advantage on Dexterity ({@skill Stealth}) checks made while underwater."
+				]
+			},
+			{
+				"name": "Water Breathing",
+				"entries": [
+					"The octopus can breathe only underwater."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Tentacles",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 bludgeoning damage, and the target is {@condition grappled} (escape {@dc 10}). Until this grapple ends, the octopus can't use its tentacles on another target."
+				]
+			},
+			{
+				"name": "Ink Cloud (Recharges after a Short or Long Rest)",
+				"entries": [
+					"A 5-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action."
+				]
+			}
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/octopus.mp3"
+		},
+		"traitTags": [
+			"Hold Breath",
+			"Water Breathing"
+		],
+		"senseTags": [
+			"D"
+		],
+		"actionTags": [
+			"Tentacles"
+		],
+		"damageTags": [
+			"B"
+		],
+		"miscTags": [
+			"AOE",
+			"MW"
+		],
+		"conditionInflict": [
+			"grappled"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Owl",
+		"source": "MM",
+		"page": 333,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "RoT"
+			},
+			{
+				"source": "IMR"
+			},
+			{
+				"source": "IDRotF"
+			},
+			{
+				"source": "CM"
+			}
+		],
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			11
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 5,
+			"fly": 60
+		},
+		"str": 3,
+		"dex": 13,
+		"con": 8,
+		"int": 2,
+		"wis": 12,
+		"cha": 7,
+		"skill": {
+			"perception": "+3",
+			"stealth": "+3"
+		},
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"passive": 13,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Flyby",
+				"entries": [
+					"The owl doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+				]
+			},
+			{
+				"name": "Keen Hearing and Sight",
+				"entries": [
+					"The owl has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Talons",
+				"entries": [
+					"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}1 slashing damage."
+				]
+			}
+		],
+		"environment": [
+			"arctic",
+			"forest"
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/owl.mp3"
+		},
+		"traitTags": [
+			"Flyby",
+			"Keen Senses"
+		],
+		"senseTags": [
+			"SD"
+		],
+		"damageTags": [
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Poisonous Snake",
+		"source": "MM",
+		"page": 334,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "TftYP"
+			},
+			{
+				"source": "ToA"
+			},
+			{
+				"source": "GoS"
+			},
+			{
+				"source": "IMR"
+			}
+		],
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 2,
+			"formula": "1d4"
+		},
+		"speed": {
+			"walk": 30,
+			"swim": 30
+		},
+		"str": 2,
+		"dex": 16,
+		"con": 11,
+		"int": 1,
+		"wis": 10,
+		"cha": 3,
+		"senses": [
+			"blindsight 10 ft."
+		],
+		"passive": 10,
+		"cr": "1/8",
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}1 piercing damage, and the target must make a {@dc 10} Constitution saving throw, taking 5 ({@damage 2d4}) poison damage on a failed save, or half as much damage on a successful one."
+				]
+			}
+		],
+		"environment": [
+			"coastal",
+			"desert",
+			"forest",
+			"grassland",
+			"hill",
+			"swamp"
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/poisonous-snake.mp3"
+		},
+		"senseTags": [
+			"B"
+		],
+		"damageTags": [
+			"I",
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Pseudodragon",
+		"source": "MM",
+		"page": 254,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "RoT"
+			},
+			{
+				"source": "ToA"
+			},
+			{
+				"source": "WDMM"
+			},
+			{
+				"source": "GoS"
+			},
+			{
+				"source": "ERLW"
+			},
+			{
+				"source": "IMR"
+			},
+			{
+				"source": "EGW"
+			},
+			{
+				"source": "IDRotF"
+			}
+		],
+		"size": "T",
+		"type": "dragon",
+		"alignment": [
+			"N",
+			"G"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 7,
+			"formula": "2d4 + 2"
+		},
+		"speed": {
+			"walk": 15,
+			"fly": 60
+		},
+		"str": 6,
+		"dex": 15,
+		"con": 13,
+		"int": 10,
+		"wis": 12,
+		"cha": 10,
+		"skill": {
+			"perception": "+3",
+			"stealth": "+4"
+		},
+		"senses": [
+			"blindsight 10 ft.",
+			"darkvision 60 ft."
+		],
+		"passive": 13,
+		"languages": [
+			"understands Common and Draconic but can't speak"
+		],
+		"cr": "1/4",
+		"trait": [
+			{
+				"name": "Keen Senses",
+				"entries": [
+					"The pseudodragon has advantage on Wisdom ({@skill Perception}) checks that rely on sight, hearing, or smell."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The pseudodragon has advantage on saving throws against spells and other magical effects."
+				]
+			},
+			{
+				"name": "Limited Telepathy",
+				"entries": [
+					"The pseudodragon can magically communicate simple ideas, emotions, and images telepathically with any creature within 100 feet of it that can understand a language."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage."
+				]
+			},
+			{
+				"name": "Sting",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}4 ({@damage 1d4 + 2}) piercing damage, and the target must succeed on a {@dc 11} Constitution saving throw or become {@condition poisoned} for 1 hour. If the saving throw fails by 5 or more, the target falls {@condition unconscious} for the same duration, or until it takes damage or another creature uses an action to shake it awake."
+				]
+			}
+		],
+		"variant": [
+			{
+				"type": "variant",
+				"name": "Pseudodragon Familiar",
+				"entries": [
+					"Some pseudodragons are willing to serve spellcasters as a familiar. Such pseudodragons have the following trait.",
+					{
+						"name": "Familiar",
+						"type": "entries",
+						"entries": [
+							"The pseudodragon can serve another creature as a familiar, forming a magic, telepathic bond with that willing companion. While the two are bonded, the companion can sense what the pseudodragon senses as long as they are within 1 mile of each other. While the pseudodragon is within 10 feet of its companion, the companion shares the pseudodragon's Magic Resistance trait. At any time and for any reason, the pseudodragon can end its service as a familiar, ending the telepathic bond."
+						]
+					}
+				]
+			}
+		],
+		"environment": [
+			"coastal",
+			"desert",
+			"forest",
+			"hill",
+			"mountain",
+			"urban"
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/pseudodragon.mp3"
+		},
+		"traitTags": [
+			"Keen Senses",
+			"Magic Resistance"
+		],
+		"senseTags": [
+			"B",
+			"D"
+		],
+		"languageTags": [
+			"C",
+			"CS",
+			"DR"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"poisoned",
+			"unconscious"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Quasit",
+		"source": "MM",
+		"page": 63,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "CoS"
+			},
+			{
+				"source": "TftYP"
+			},
+			{
+				"source": "WDMM"
+			},
+			{
+				"source": "BGDIA"
+			},
+			{
+				"source": "EGW"
+			},
+			{
+				"source": "TCE"
+			},
+			{
+				"source": "CM"
+			},
+			{
+				"source": "WBtW"
+			}
+		],
+		"size": "T",
+		"type": {
+			"type": "fiend",
+			"tags": [
+				"demon"
+			]
+		},
+		"alignment": [
+			"C",
+			"E"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 7,
+			"formula": "3d4"
+		},
+		"speed": {
+			"walk": 40
+		},
+		"str": 5,
+		"dex": 17,
+		"con": 10,
+		"int": 7,
+		"wis": 10,
+		"cha": 10,
+		"skill": {
+			"stealth": "+5"
+		},
+		"senses": [
+			"darkvision 120 ft."
+		],
+		"passive": 10,
+		"resist": [
+			"cold",
+			"fire",
+			"lightning",
+			{
+				"resist": [
+					"bludgeoning",
+					"piercing",
+					"slashing"
+				],
+				"note": "from nonmagical attacks",
+				"cond": true
+			}
+		],
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"languages": [
+			"Abyssal",
+			"Common"
+		],
+		"cr": "1",
+		"trait": [
+			{
+				"name": "Shapechanger",
+				"entries": [
+					"The quasit can use its action to polymorph into a beast form that resembles a bat (speed 10 feet fly 40 ft.), a centipede (40 ft., climb 40 ft.), or a toad (40 ft., swim 40 ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+				]
+			},
+			{
+				"name": "Magic Resistance",
+				"entries": [
+					"The quasit has advantage on saving throws against spells and other magical effects."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Claw (Bite in Beast Form)",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage, and the target must succeed on a {@dc 10} Constitution saving throw or take 5 ({@damage 2d4}) poison damage and become {@condition poisoned} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+				]
+			},
+			{
+				"name": "Scare (1/Day)",
+				"entries": [
+					"One creature of the quasit's choice within 20 feet of it must succeed on a {@dc 10} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, with disadvantage if the quasit is within line of sight, ending the effect on itself on a success."
+				]
+			},
+			{
+				"name": "Invisibility",
+				"entries": [
+					"The quasit magically turns {@condition invisible} until it attacks or uses Scare, or until its concentration ends (as if concentrating on a spell). Any equipment the quasit wears or carries is {@condition invisible} with it."
+				]
+			}
+		],
+		"variant": [
+			{
+				"type": "variant",
+				"name": "Quasit Familiar",
+				"entries": [
+					"Mortal spellcasters interested in extraplanar familiars find quasits easy to summon and eager to serve. The quasit plays the part of the obsequious servant. It serves its master well, but it goads the mortal to greater and greater acts of chaos and evil. Such quasits have the following trait.",
+					{
+						"name": "Familiar",
+						"type": "entries",
+						"entries": [
+							"The quasit can serve another creature as a familiar, forming a telepathic bond with its willing master. While the two are bonded, the master can sense what the quasit senses as long as they are within 1 mile of each other. While the quasit is within 10 feet of its master, the master shares the quasit's Magic Resistance trait. At any time and for any reason, the quasit can end its service as a familiar, ending the telepathic bond."
+						]
+					}
+				]
+			}
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/quasit.mp3"
+		},
+		"traitTags": [
+			"Magic Resistance",
+			"Shapechanger"
+		],
+		"senseTags": [
+			"SD"
+		],
+		"languageTags": [
+			"AB",
+			"C"
+		],
+		"damageTags": [
+			"I",
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"conditionInflict": [
+			"frightened",
+			"invisible",
+			"poisoned"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Quipper",
+		"source": "MM",
+		"page": 335,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "PotA"
+			},
+			{
+				"source": "ToA"
+			},
+			{
+				"source": "GoS"
+			},
+			{
+				"source": "MOT"
+			},
+			{
+				"source": "IDRotF"
+			}
+		],
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"swim": 40
+		},
+		"str": 2,
+		"dex": 16,
+		"con": 9,
+		"int": 1,
+		"wis": 7,
+		"cha": 2,
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 8,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Blood Frenzy",
+				"entries": [
+					"The quipper has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+				]
+			},
+			{
+				"name": "Water Breathing",
+				"entries": [
+					"The quipper can breathe only underwater."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+				]
+			}
+		],
+		"environment": [
+			"underwater"
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/quipper.mp3"
+		},
+		"traitTags": [
+			"Water Breathing"
+		],
+		"senseTags": [
+			"D"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Rat",
+		"source": "MM",
+		"page": 335,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "TftYP"
+			},
+			{
+				"source": "ToA"
+			},
+			{
+				"source": "WDH"
+			},
+			{
+				"source": "GoS"
+			},
+			{
+				"source": "BGDIA"
+			},
+			{
+				"source": "EGW"
+			},
+			{
+				"source": "IDRotF"
+			}
+		],
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 20
+		},
+		"str": 2,
+		"dex": 11,
+		"con": 9,
+		"int": 2,
+		"wis": 10,
+		"cha": 4,
+		"senses": [
+			"darkvision 30 ft."
+		],
+		"passive": 10,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Keen Smell",
+				"entries": [
+					"The rat has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+				]
+			}
+		],
+		"environment": [
+			"swamp",
+			"urban"
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/rat.mp3"
+		},
+		"traitTags": [
+			"Keen Senses"
+		],
+		"senseTags": [
+			"D"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Raven",
+		"source": "MM",
+		"page": 335,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "CoS"
+			},
+			{
+				"source": "IDRotF"
+			},
+			{
+				"source": "CM"
+			},
+			{
+				"source": "WBtW"
+			}
+		],
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 10,
+			"fly": 50
+		},
+		"str": 2,
+		"dex": 14,
+		"con": 8,
+		"int": 2,
+		"wis": 12,
+		"cha": 6,
+		"skill": {
+			"perception": "+3"
+		},
+		"passive": 13,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Mimicry",
+				"entries": [
+					"The raven can mimic simple sounds it has heard, such as a person whispering, a baby crying, or an animal chittering. A creature that hears the sounds can tell they are imitations with a successful {@dc 10} Wisdom (Insight) check."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Beak",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+				]
+			}
+		],
+		"environment": [
+			"hill",
+			"swamp",
+			"urban"
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/raven.mp3"
+		},
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Sea Horse",
+		"source": "MM",
+		"page": 337,
+		"srd": true,
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			11
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"swim": 20
+		},
+		"str": 1,
+		"dex": 12,
+		"con": 8,
+		"int": 1,
+		"wis": 10,
+		"cha": 2,
+		"passive": 10,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Water Breathing",
+				"entries": [
+					"The sea horse can breathe only underwater."
+				]
+			}
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/sea-horse.mp3"
+		},
+		"traitTags": [
+			"Water Breathing"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Space Hamster",
+		"source": "WDMM",
+		"page": 251,
+		"damageTags": [],
+		"miscTags": [],
+		"hasToken": true,
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			10
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 20
+		},
+		"str": 2,
+		"dex": 11,
+		"con": 9,
+		"int": 2,
+		"wis": 10,
+		"cha": 4,
+		"senses": [
+			"darkvision 30 ft."
+		],
+		"passive": 10,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Keen Smell",
+				"entries": [
+					"the hamster has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+				]
+			}
+		],
+		"familiar": true,
+		"traitTags": [
+			"Keen Senses"
+		],
+		"senseTags": [
+			"D"
+		]
+	},
+	{
+		"name": "Spider",
+		"source": "MM",
+		"page": 337,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "PotA"
+			},
+			{
+				"source": "WDMM"
+			}
+		],
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 20,
+			"climb": 20
+		},
+		"str": 2,
+		"dex": 14,
+		"con": 8,
+		"int": 1,
+		"wis": 10,
+		"cha": 2,
+		"skill": {
+			"stealth": "+4"
+		},
+		"senses": [
+			"darkvision 30 ft."
+		],
+		"passive": 10,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Spider Climb",
+				"entries": [
+					"The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+				]
+			},
+			{
+				"name": "Web Sense",
+				"entries": [
+					"While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+				]
+			},
+			{
+				"name": "Web Walker",
+				"entries": [
+					"The spider ignores movement restrictions caused by webbing."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}1 piercing damage, and the target must succeed on a {@dc 9} Constitution saving throw or take 2 ({@damage 1d4}) poison damage."
+				]
+			}
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/spider.mp3"
+		},
+		"traitTags": [
+			"Spider Climb",
+			"Web Sense",
+			"Web Walker"
+		],
+		"senseTags": [
+			"D"
+		],
+		"damageTags": [
+			"I",
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true
+	},
+	{
+		"name": "Sprite",
+		"source": "MM",
+		"page": 283,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "PotA"
+			},
+			{
+				"source": "SKT"
+			},
+			{
+				"source": "GoS"
+			},
+			{
+				"source": "BGDIA"
+			},
+			{
+				"source": "ERLW"
+			},
+			{
+				"source": "IMR"
+			},
+			{
+				"source": "CM"
+			},
+			{
+				"source": "WBtW"
+			}
+		],
+		"size": "T",
+		"type": "fey",
+		"alignment": [
+			"N",
+			"G"
+		],
+		"ac": [
+			{
+				"ac": 15,
+				"from": [
+					"{@item leather armor|phb}"
+				]
+			}
+		],
+		"hp": {
+			"average": 2,
+			"formula": "1d4"
+		},
+		"speed": {
+			"walk": 10,
+			"fly": 40
+		},
+		"str": 3,
+		"dex": 18,
+		"con": 10,
+		"int": 14,
+		"wis": 13,
+		"cha": 11,
+		"skill": {
+			"perception": "+3",
+			"stealth": "+8"
+		},
+		"passive": 13,
+		"languages": [
+			"Common",
+			"Elvish",
+			"Sylvan"
+		],
+		"cr": "1/4",
+		"action": [
+			{
+				"name": "Longsword",
+				"entries": [
+					"{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}1 slashing damage."
+				]
+			},
+			{
+				"name": "Shortbow",
+				"entries": [
+					"{@atk rw} {@hit 6} to hit, range 40/160 ft., one target. {@h}1 piercing damage, and the target must succeed on a {@dc 10} Constitution saving throw or become {@condition poisoned} for 1 minute. If its saving throw result is 5 or lower, the {@condition poisoned} target falls {@condition unconscious} for the same duration, or until it takes damage or another creature takes an action to shake it awake."
+				]
+			},
+			{
+				"name": "Heart Sight",
+				"entries": [
+					"The sprite touches a creature and magically knows the creature's current emotional state. If the target fails a {@dc 10} Charisma saving throw, the sprite also knows the creature's alignment. Celestials, fiends, and undead automatically fail the saving throw."
+				]
+			},
+			{
+				"name": "Invisibility",
+				"entries": [
+					"The sprite magically turns {@condition invisible} until it attacks or casts a spell, or until its concentration ends (as if concentrating on a spell). Any equipment the sprite wears or carries is {@condition invisible} with it."
+				]
+			}
+		],
+		"environment": [
+			"forest"
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/sprite.mp3"
+		},
+		"languageTags": [
+			"C",
+			"E",
+			"S"
+		],
+		"damageTags": [
+			"P",
+			"S"
+		],
+		"miscTags": [
+			"MW",
+			"RNG",
+			"RW"
+		],
+		"conditionInflict": [
+			"invisible",
+			"poisoned"
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	},
+	{
+		"name": "Tressym",
+		"source": "BGDIA",
+		"page": 241,
+		"otherSources": [
+			{
+				"source": "IMR"
+			}
+		],
+		"type": "monstrosity",
+		"hasToken": true,
+		"hasFluffImages": true,
+		"size": "T",
+		"alignment": [
+			"C",
+			"N"
+		],
+		"ac": [
+			12
+		],
+		"hp": {
+			"average": 5,
+			"formula": "2d4"
+		},
+		"speed": {
+			"walk": 40,
+			"climb": 30,
+			"fly": 40
+		},
+		"str": 3,
+		"dex": 15,
+		"con": 10,
+		"int": 11,
+		"wis": 12,
+		"cha": 12,
+		"skill": {
+			"perception": "+5",
+			"stealth": "+4"
+		},
+		"senses": [
+			"darkvision 60 ft."
+		],
+		"passive": 15,
+		"immune": [
+			"poison"
+		],
+		"conditionImmune": [
+			"poisoned"
+		],
+		"languages": [
+			"understands Common but can't speak"
+		],
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Detect Invisibility",
+				"entries": [
+					"Within 60 feet of the tressym, magical invisibility fails to conceal anything from the tressym's sight."
+				]
+			},
+			{
+				"name": "Keen Smell",
+				"entries": [
+					"The tressym has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+				]
+			},
+			{
+				"name": "Poison Sense",
+				"entries": [
+					"The tressym can detect whether a substance is poisonous by taste, touch, or smell."
+				]
+			},
+			{
+				"name": "Familiar",
+				"entries": [
+					"With the DM's permission, a person who casts the find familiar spell can choose to conjure a tressym in stead of a normal cat."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Claws",
+				"entries": [
+					"{@atk mw} {@hit 0} to hit, reach 5 ft., one target. {@h}1 slashing damage."
+				]
+			}
+		],
+		"familiar": true,
+		"traitTags": [
+			"Keen Senses"
+		],
+		"senseTags": [
+			"D"
+		],
+		"languageTags": [
+			"C",
+			"CS"
+		],
+		"damageTags": [
+			"S"
+		],
+		"miscTags": [
+			"MW"
+		]
+	},
+	{
+		"name": "Weasel",
+		"source": "MM",
+		"page": 340,
+		"srd": true,
+		"otherSources": [
+			{
+				"source": "IDRotF"
+			},
+			{
+				"source": "WBtW"
+			}
+		],
+		"size": "T",
+		"type": "beast",
+		"alignment": [
+			"U"
+		],
+		"ac": [
+			13
+		],
+		"hp": {
+			"average": 1,
+			"formula": "1d4 - 1"
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 3,
+		"dex": 16,
+		"con": 8,
+		"int": 2,
+		"wis": 12,
+		"cha": 3,
+		"skill": {
+			"perception": "+3",
+			"stealth": "+5"
+		},
+		"passive": 13,
+		"cr": "0",
+		"trait": [
+			{
+				"name": "Keen Hearing and Smell",
+				"entries": [
+					"The weasel has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+				]
+			}
+		],
+		"action": [
+			{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit 5} to hit, reach 5 ft., one creature. {@h}1 piercing damage."
+				]
+			}
+		],
+		"familiar": true,
+		"soundClip": {
+			"type": "internal",
+			"path": "bestiary/weasel.mp3"
+		},
+		"traitTags": [
+			"Keen Senses"
+		],
+		"damageTags": [
+			"P"
+		],
+		"miscTags": [
+			"MW"
+		],
+		"hasToken": true
+	}
+]
