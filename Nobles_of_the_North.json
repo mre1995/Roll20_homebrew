@@ -1,0 +1,1352 @@
+{
+	"siteVersion": "1.143.0",
+	"_meta": {
+		"sources": [
+			{
+				"json": "NoblesoftheNorth",
+				"abbreviation": "NotN",
+				"full": "Nobles of the North",
+				"url": "",
+				"authors": [
+					"thebrainbomb"
+				],
+				"convertedBy": [
+					"thebrainbomb"
+				]
+			}
+		],
+		"dateAdded": 1637804431,
+		"dateLastModified": 1637804431
+	},
+	"monster": [
+		{
+			"name": "Lady Chiara",
+			"alias": [
+				"Grandmother",
+				"Grandma"
+			],
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "NoblesoftheNorth",
+			"size": "M",
+			"type": "fey",
+			"alignment": [
+				{
+					"special": "Unknown"
+				}
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "14d8 + 28",
+				"average": 91
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 16,
+			"con": 14,
+			"int": 12,
+			"wis": 13,
+			"cha": 16,
+			"save": {
+				"wis": "+6"
+			},
+			"skill": {
+				"nature": "+6",
+				"perception": "+6",
+				"stealth": "+8",
+				"survival": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"force"
+			],
+			"languages": [
+				"All"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"headerEntries": [
+						"The Lady Chiara's innate spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). It can innately cast the following spells, requiring no material components:"
+					],
+					"will": [
+						"{@spell hold person}",
+						"{@spell mind sliver|TCE}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell blight}",
+							"{@spell vitriolic sphere|XGE}",
+							"{@spell wall of thorns}"
+						],
+						"1e": [
+							"{@spell demiplane}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Lady Chiara fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"Lady Chiara has advantage on saving throws against spells and other magical effects."
+					]
+				},
+				{
+					"name": "Forestwalker",
+					"entries": [
+						"Lady Chiara can move in forests without needing to make an ability check. Additionally, difficult terrain composed of plants doesn't cost her extra moment."
+					]
+				},
+				{
+					"name": "Broomskull Magic",
+					"entries": [
+						"Lady Chiaracarries around Broomskull, a broom with a small skull at one end that is a focus for her inner power. She can ride the staff as if it were a broom of flying. While holding the staff, she can cast additional spells with her Innate Spellcasting trait (these spells are marked with an asterisk). If the staff is lost or destroyed, the hag must craft another, which takes a year and a day. Only Lady Chiara can use Broomskull."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d8 + 1}) bludgeoning damage plus 3 ({@damage 1d6}) force damage"
+					]
+				},
+				{
+					"name": "Maddening Feast",
+					"entries": [
+						"Lady Chiara feasts on the corpse of one enemy within 5 feet of her that died within the past minute. Each creature of the hag's choice that is within 60 feet of her and able to see her must succeed on a {@dc 15} Wisdom saving throw or be {@condition frightened} of her for 1 minute. While {@condition frightened} in this way, a creature is {@condition incapacitated}, can't understand what others say, can't read, and speaks only in gibberish; the DM controls the creature's movement, which is erratic. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the hag's Maddening Feast for the next 24 hours."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Lady Chiara can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The monster regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Slam",
+					"entries": [
+						"The hag makes one slam attack."
+					]
+				},
+				{
+					"name": "Insect Swarm (Costs 2 Actions)",
+					"entries": [
+						"If Lady Chiara is wielding her Broomskull, she creates a 30- foot radius sphere of whirling insects centered on herself, heavily obscuring the area, which lasts until the end of her next turn."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/az1kJHM.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/r6fnIEG.png",
+			"traitTags": [
+				"Legendary Resistances",
+				"Magic Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"incapacitated"
+			]
+		},
+		{
+			"name": "Lady Lilin",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "NoblesoftheNorth",
+			"size": "M",
+			"type": "monstrosity",
+			"alignment": [
+				{
+					"special": "Unknown"
+				}
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d8 + 68",
+				"average": 144
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60,
+				"canHover": false
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 23,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"dex": "+9",
+				"wis": "+7",
+				"cha": "+9"
+			},
+			"skill": {
+				"deception": "+14",
+				"insight": "+12",
+				"perception": "+12",
+				"persuasion": "+14",
+				"stealth": "+14"
+			},
+			"senses": [
+				"blindsight 120 ft.",
+				"darkvision 60 ft."
+			],
+			"passive": 22,
+			"resist": [
+				{
+					"resist": [
+						"necrotic"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks"
+				}
+			],
+			"immune": [
+				"psychic"
+			],
+			"languages": [
+				"All"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the Lady Lilin fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"Lady Lilin use her action to polymorph into a Small or Medium humanoid, a {@creature Giant Bat|MM} or tiny {@creature Bat|MM}, or back into her true form. In her humanoid for she loses her wings and her flying speed. While in the bat forms, Lady Lilin can't speak, and its statistics, other than its size and speed, are unchanged. Any equipment she is wearing or carrying isn't transformed into her humanoid form, but anything she is wearing transforms with her into her bat forms. She reverts to her true form if she dies."
+					]
+				},
+				{
+					"name": "Levitate",
+					"entries": [
+						"As a bonus action, Lady Lilin can rise or descend vertically up to 20 feet and can remain suspended there. This trait works like the levitate spell, except there is no duration, and Lady Lilin doesn't need to concentrate to continue levitating each round."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Lady Lilin regains 20 hp at the start of her turn if she has at least 1 hp and isn't in sunlight or running water. If Lady Lilin takes radiant damage or damage from holy water, this trait doesn't function at the start of her next turn."
+					]
+				},
+				{
+					"name": "Lady Lilin's Weaknesses",
+					"entries": [
+						"Lady Lilin has the following flaws:",
+						"{@i Forbiddance}. Lady Lilin can't enter a residence without an invitation from one of the occupants.",
+						"{@i Harmed by Running Water}. Lady Lilin takes 20 acid damage if it ends its turn in running water.",
+						"{@i Stake to the Heart}. If a piercing weapon made of wood is driven into Lady Lilin's heart while Lady Lilin is {@condition incapacitated} in its resting place, Lady Lilin is {@condition paralyzed} until the stake is removed.",
+						"{@i Sunlight Hypersensitivity}. Lady Lilin takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Lady Lilin can use Imprison Mind. She then makes two attacks, only one of which can be a psychic assault."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) bludgeoning damage. Instead of dealing damage, Lady Lilin can grapple the target (escape {@dc 18})."
+					]
+				},
+				{
+					"name": "Imprison Mind",
+					"entries": [
+						"Lady Lilin chooses one humanoid she can see within 30 feet of her. If the target can see Lady Lilin, the target must succeed on a {@dc 17} Wisdom saving throw or be {@condition incapacitated} for 1 minute. While {@condition incapacitated}, its speed is reduced to 0 and its mind is overwhelmed with a flood with lust. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. The target can also repeat the saving throw if another creature uses an action to shake the target out of its stupor."
+					]
+				},
+				{
+					"name": "Psychic Assault",
+					"entries": [
+						"Lady Lilin chooses one creature she can see within 30 feet of her. The target must succeed on a {@dc 17} Intelligence saving throw or take 18 {@damage 4d8} psychic damage and suffer memory loss, and Lady Lilin regains hp equal to the psychic damage dealt. A humanoid slain in this way and then buried in the ground rises the following night as a vampire spawn under Lady Lilin's control.",
+						"The target's memory loss can manifest in a variety of ways. Roll a {@dice d4} and consult below. If the target is already affected by one of these options, roll again, unless otherwise noted. The memory loss lasts until it is cured by a greater restoration spell or similar magic.",
+						"{@i 1} The target forgets how to use a particular skill or tool. It has disadvantage on one random skill or tool proficiency. If the target is already affected by this memory loss, randomly choose an additional skill or tool proficiency to also be affected.",
+						"{@i 2} The target forgets one of its current allies and now views the ally as hostile. If the target is already affected by this memory loss, choose an additional ally.",
+						"{@i 3} The target forgets key aspects of fighting and has disadvantage on its first attack roll each turn.",
+						"{@i 4} The target forgets how to defend itself properly, and the first attack roll against it each turn has advantage."
+					]
+				},
+				{
+					"name": "Lilin's Guard (1/Day)",
+					"entries": [
+						"Lady Lilin magically calls {@dice 2d4} {@creature Swarm of Ravens|MM} or {@dice 1d4} {@creature Giant Raven|SKT}. The called creatures arrive in {@dice 1d4} rounds, acting as allies of Lady Lilin and obeying its spoken commands. The creatures remain for 1 hour, until Lady Lilin dies, or until Lady Lilin dismisses them as a bonus action."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Lady Lilin can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The monster regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"Lady Lilin moves up to her speed without provoking opportunity attacks. If she uses this legendary action while levitating, Lady Lilin can move up to half her speed horizontally instead."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"Lady Lilin makes one unarmed strike."
+					]
+				},
+				{
+					"name": "Psychic Pulse (Costs 3 Actions)",
+					"entries": [
+						"Lady Lilin releases a powerful wave of psychic energy. Each creature within 20 feet of Lady Lilin must succeed on a {@dc 17} Intelligence saving throw or be {@condition stunned} until the end of its next turn."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/ghZqChV.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/OkGEgOH.png",
+			"traitTags": [
+				"Legendary Resistances",
+				"Regeneration",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"R"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"stunned"
+			]
+		},
+		{
+			"name": "Lord Ahti",
+			"isNamedCreature": true,
+			"source": "NoblesoftheNorth",
+			"size": "H",
+			"type": "aberration",
+			"alignment": [
+				{
+					"special": "Unknown"
+				}
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "22d12 + 66",
+				"average": 209
+			},
+			"speed": {
+				"walk": 10,
+				"swim": 40
+			},
+			"str": 22,
+			"dex": 9,
+			"con": 16,
+			"int": 18,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"con": "+8",
+				"int": "+9",
+				"wis": "+8"
+			},
+			"skill": {
+				"history": "+14",
+				"perception": "+13"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 23,
+			"languages": [
+				"All"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"Lord Ahti can use its action to polymorph into a any creature with a swim speed, or back into its true form. Its statistics, other than its size and speed, are the same in each form. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Acidic Mucous Cloud",
+					"entries": [
+						"While underwater, Lord Ahti is surrounded by transformative mucus. A creature that touches Lord Ahti or that hits it with a melee attack while within 5 feet of it takes 7 {@damage 2d6} acid damage and must succeed on a {@dc 16} Constitution saving throw. On a failure, the creature is diseased for {@dice 1d4} hours. The diseased creature can breathe only underwater."
+					]
+				},
+				{
+					"name": "Amphibious",
+					"entries": [
+						"Lord Ahti can breathe air and water."
+					]
+				},
+				{
+					"name": "Probing Telepathy",
+					"entries": [
+						"If a creature communicates telepathically with Lord Ahti, the aboleth learns the creature's greatest desires if Lord Ahti can see the creature."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Lord Ahti makes three tentacle attacks. Alternatively, it can use two slime orb attacks."
+					]
+				},
+				{
+					"name": "Slime Orb",
+					"entries": [
+						"{@atk rw} {@hit 11} to hit, range 120 ft., one target. {@h}14 ({@damage 4d6}) acid damage and the target must succeed on a {@dc 16} Strength saving throw or be {@condition restrained} until the end of Lord Ahti's next turn."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 15 ft., one target. {@h}13 ({@damage 2d6 + 6}) bludgeoning damage, plus 10 ({@damage 3d6}) acid damage. If the target is a creature, it must succeed on a {@dc 16} Constitution saving throw or become diseased. The disease has no effect for 1 minute and can be removed by any magic that cures disease. After 1 minute, the diseased creature's skin becomes translucent and slimy, the creature can't regain hit points unless it is underwater, and the disease can be removed only by heal or another disease-curing spell of 6th level or higher. When the creature is outside a body of water, it takes 6 ({@damage 1d12}) acid damage every 10 minutes unless moisture is applied to the skin before 10 minutes have passed."
+					]
+				},
+				{
+					"name": "Tail",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 20 ft., one target. {@h}16 ({@damage 3d6 + 6}) bludgeoning damage plus 10 ({@damage 3d6}) acid damage."
+					]
+				},
+				{
+					"name": "Enslave (3/Day)",
+					"entries": [
+						" Lord Ahti targets one creature it can see within 30 feet of it. The target must succeed on a {@dc 16} Wisdom saving throw or be magically {@condition charmed} by Lord Ahti until Lord Ahti dies or until it is on a different plane of existence from the target. The {@condition charmed} target is under the Lord Ahti's control and can't take reactions, and Lord Ahti and the target can communicate telepathically with each other over any distance, and can speak trough them.",
+						"Whenever the {@condition charmed} target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target can also repeat the saving throw when it is at least 1 mile away from Lord Ahti."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Lord Ahti can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The monster regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Tail Swipe",
+					"entries": [
+						"Lord Ahti makes one tail attack."
+					]
+				},
+				{
+					"name": "Life Drain (Costs 2 Actions)",
+					"entries": [
+						"One creature {@condition charmed} by Lord Ahti takes 17 {@damage 5d6} acid damage, and Lord Ahti regains hit points equal to the damage the creature takes."
+					]
+				},
+				{
+					"name": "Slime Sphere (Costs 3 Actions)",
+					"entries": [
+						"Lord Ahti conjures a ball of acidic slime that explodes at a point it can see within 120 feet of it.",
+						"Each creature in a 20-foot-radius sphere centered on that point must succeed on a {@dc 16} Strength saving throw. On a failed save, the target takes 14 ({@damage 4d6}) acid damage and is {@condition restrained}, or half as much damage and isn't {@condition restrained} on a successful one. A {@condition restrained} creature takes 10 ({@damage 3d6}) acid damage at the start of each of Lord Ahti's turns. A {@condition restrained} creature can use an action to perform a  {@dc 16} Strength (Athletics) or Dexterity (Acrobatics) check, ending the effect on itself on a success."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/XdfC4Q1.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/5iCIKWd.png",
+			"traitTags": [
+				"Amphibious",
+				"Shapechanger"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"damageTags": [
+				"A",
+				"B"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"restrained"
+			]
+		},
+		{
+			"name": "Lord Balor",
+			"isNpc": true,
+			"source": "NoblesoftheNorth",
+			"size": "L",
+			"type": "undead",
+			"alignment": [
+				{
+					"special": "Unknown"
+				}
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "15d10 + 75",
+				"average": 157
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 60,
+					"condition": "hover"
+				},
+				"canHover": true
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 20,
+			"int": 14,
+			"wis": 16,
+			"cha": 17,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"acid",
+						"cold",
+						"fire",
+						"lightning",
+						"thunder"
+					]
+				},
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks that aren't silvered"
+				}
+			],
+			"immune": [
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"All"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Detect Life",
+					"entries": [
+						"Lord Balor can magically sense the presence of living creatures up to 120 feet away. He knows the general direction they're in but not their exact locations."
+					]
+				},
+				{
+					"name": "Fear Aura",
+					"entries": [
+						"A creature that starts its turn within 20 feet of Lord Balor must succeed on a {@dc 16} Wisdom saving throw, unless the wraith is {@condition incapacitated}. On a failed save, the creature is {@condition frightened} for 1 minute. While {@condition frightened} in this way, a creature must take the Dash action on each of its turns, unless there is nowhere to move, in which case it needn't take the Dash action. If the creature ends its turn in a location where it doesn't have line of sight to the wraith, the creature can repeat the saving throw. On a success, the effect ends If a creature's saving throw is successful, the creature is immune to the wraith's Fear Aura for the next 24 hours."
+					]
+				},
+				{
+					"name": "Incorporeal Movement",
+					"entries": [
+						"Lord Balor can move through other creatures and objects as if they were difficult terrain. It takes 5 ({@damage 1d10}) force damage if she ends her turn inside an object."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the lord balor has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Lord Balor uses Command Undead. It then makes two greatsword attacks. It can use its Life Drain in place of one greatsword attack."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage, plus 4 ({@damage 1d8}) necrotic damage."
+					]
+				},
+				{
+					"name": "Life Drain",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}35 ({@damage 7d8 + 4}) necrotic damage. The target must succeed on a {@dc 18} Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+					]
+				},
+				{
+					"name": "Command Undead",
+					"entries": [
+						"Lord Balor targets one undead ally it can see within 30 feet of it and gives it a telepathic command. The target can use its reaction to move up to half its speed and make one weapon attack."
+					]
+				},
+				{
+					"name": "Create Specter",
+					"entries": [
+						"Lord Balor targets a humanoid within 10 feet of it that has been dead for no longer than 1 minute and died violently. The target's spirit rises as a {@creature specter|MM} in the space of its corpse or in the nearest unoccupied space. The {@creature specter|MM} is under Lord Balor's control. Lord Balor can have no more than seven {@creature specter|MM} under its control at one time."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Lord Balor can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The monster regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"Lord Balor moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Attack",
+					"entries": [
+						"Lord Balor makes one greatsword attack."
+					]
+				},
+				{
+					"name": "Command",
+					"entries": [
+						"Lord Balor uses Command Undead."
+					]
+				},
+				{
+					"name": "Life Drain (Costs 2 Actions)",
+					"entries": [
+						"Lord Balor uses Life Drain."
+					]
+				},
+				{
+					"name": "Disrupt Life (Costs 3 Actions)",
+					"entries": [
+						"Each living creature within 20 feet of Lord Balor must make a {@dc 18} Constitution saving throw against this magic, taking 17 ({@damage 5d6}) necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/HNTb5G9.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/yPoDwXb.png",
+			"traitTags": [
+				"Incorporeal Movement",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"N",
+				"O",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"frightened"
+			]
+		},
+		{
+			"name": "Lord Oncrad",
+			"isNpc": true,
+			"source": "NoblesoftheNorth",
+			"size": "M",
+			"type": "aberration",
+			"alignment": [
+				{
+					"special": "Unknown"
+				}
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "23d8 + 80",
+				"average": 183
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 20,
+					"condition": "hover"
+				},
+				"canHover": true
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 18,
+			"int": 30,
+			"wis": 15,
+			"cha": 17,
+			"save": {
+				"int": "+15",
+				"wis": "+7",
+				"cha": "+8"
+			},
+			"skill": {
+				"perception": "+12"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 22,
+			"conditionImmune": [
+				"prone"
+			],
+			"languages": [
+				"All",
+				"telepathy 300 ft."
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the lord oncrad fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Antimagic Cone",
+					"entries": [
+						"Lord Oncrad's central eye creates an area of antimagic, as in the antimagic field spell, in a 150-foot cone. At the start of each of its turns, Lord Oncrad decides which way the cone faces and whether the cone is active. The area works against Lord Oncrad's own eye rays."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}14 ({@damage 4d6}) piercing damage."
+					]
+				},
+				{
+					"name": "Manic Magic",
+					"entries": [
+						" Lord Oncrad shoots three of the following magical eye rays at random (reroll duplicates), choosing one to three targets it can see within 120 feet of it:",
+						"{@b 1. Charm Ray.} The targeted creature must succeed on a {@dc 16} Wisdom saving throw or be {@condition charmed} by Lord Oncrad for 1 hour, or until Lord Oncrad harms the creature.",
+						"{@b 2. Paralyzing Ray.} The targeted creature must succeed on a {@dc 16} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"{@b 3. Fear Ray.} The targeted creature must succeed on a {@dc 16} Wisdom saving throw or be {@condition frightened} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"{@b 4. Slowing Ray.} The targeted creature must succeed on a {@dc 16} Dexterity saving throw. On a failed save, the target's speed is halved for 1 minute. In addition, the creature can't take reactions, and it can take either an action or a bonus action on its turn, not both. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+						"{@b 5. Enervation Ray.} The targeted creature must make a {@dc 16} Constitution saving throw, taking 36 ({@damage 8d8}) necrotic damage on a failed save, or half as much damage on a successful one.",
+						"{@b 6. Telekinetic Ray.} If the target is a creature, it must succeed on a {@dc 16} Strength saving throw or Lord Oncrad moves it up to 30 feet in any direction. It is {@condition restrained} by the ray's telekinetic grip until the start of Lord Oncrad's next turn or until Lord Oncrad is {@condition incapacitated}. If the target is an object weighing 300 pounds or less that isn't being worn or carried, it is moved up to 30 feet in any direction. Lord Oncrad can also exert fine control on objects with this ray, such as manipulating a simple tool or opening a door or a container.",
+						"{@b 7. Sleep Ray.} The targeted creature must succeed on a {@dc 16} Wisdom saving throw or fall asleep and remain {@condition unconscious} for 1 minute. The target awakens if it takes damage or another creature takes an action to wake it. This ray has no effect on constructs and undead.",
+						"{@b 8. Petrification Ray.} The targeted creature must make a {@dc 16} Dexterity saving throw. On a failed save, the creature begins to turn to stone and is {@condition restrained}. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is {@condition petrified} until freed by the greater restoration spell or other magic.",
+						"{@b 9. Disintegration Ray.} If the target is a creature, it must succeed on a {@dc 16} Dexterity saving throw or take 45 ({@damage 10d8}) force damage. If this damage reduces the creature to 0 hit points, its body becomes a pile of fine gray dust. If the target is a Large or smaller nonmagical object or creation of magical force, it is disintegrated without a saving throw. If the target is a Huge or larger object or creation of magical force, this ray disintegrates a 10-foot cube of it.",
+						"{@b 10. Death Ray.} The targeted creature must succeed on a {@dc 16} Dexterity saving throw or take 55 ({@damage 10d10}) necrotic damage. The target dies if the ray reduces it to 0 hit points."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Lord Oncrad can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The monster regains spent legendary actions at the start of its turn."
+			],
+			"legendary": [
+				{
+					"name": "Magic Burst",
+					"entries": [
+						"Lord Oncrad can use one random manic magic."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Lord Oncrad can move to his speed without provoking attacks of opportunity."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/TQdy3fy.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/5Qt9lbS.png",
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTags": [
+				"N",
+				"O",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"charmed",
+				"frightened",
+				"paralyzed",
+				"petrified",
+				"restrained",
+				"unconscious"
+			]
+		},
+		{
+			"name": "Lord Osiris",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "NoblesoftheNorth",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				{
+					"special": "Unknown"
+				}
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 105,
+				"formula": "14d8 + 42"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 16,
+			"int": 19,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"con": "+8",
+				"int": "+9",
+				"wis": "+7"
+			},
+			"skill": {
+				"arcana": "+9",
+				"history": "+9",
+				"insight": "+7",
+				"perception": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"cold",
+				"lightning",
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"frightened",
+				"paralyzed",
+				"poisoned"
+			],
+			"languages": [
+				"All"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Lord Osiris is a 12th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). He has the following wizard spells prepared:",
+						"*Conjuration spell of 1st level or higher"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell fire bolt}",
+								"{@spell mage hand}",
+								"{@spell minor illusion}",
+								"{@spell prestidigitation}",
+								"{@spell ray of frost}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell detect magic}",
+								"{@spell magic missile}",
+								"{@spell shield}",
+								"{@spell unseen servant}*"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell flaming sphere}*",
+								"{@spell mirror image}",
+								"{@spell scorching ray}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell counterspell}",
+								"{@spell dispel magic}",
+								"{@spell fireball}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell dimension door}*",
+								"{@spell Evard's black tentacles}*"
+							],
+							"slots": 3
+						},
+						"5": {
+							"spells": [
+								"{@spell cloudkill}*",
+								"{@spell scrying}"
+							],
+							"slots": 3
+						},
+						"6": {
+							"spells": [
+								"{@spell circle of death}"
+							],
+							"slots": 1
+						}
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Focused Conjuration",
+					"entries": [
+						"While Lord Osiris is concentrating on a conjuration spell, his concentration can't be broken as a result of taking damage."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If Lord Osiris fails a saving throw, he can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Rejuvenation",
+					"entries": [
+						"If Lord Osiris is destroyed but his phylactery remains intact, Lord Osiris gains a new body in {@dice 1d10} days, regaining all his hit points and becoming active again. The new body appears within 5 feet of the phylactery."
+					]
+				},
+				{
+					"name": "Turn Resistance",
+					"entries": [
+						"Lord Osiris has advantage on saving throws against any effect that turns undead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Paralyzing Touch",
+					"entries": [
+						"{@atk ms} {@hit 9} to hit, reach 5 ft., one creature. {@h}10 ({@damage 3d6}) cold damage. The target must succeed on a {@dc 17} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Benign Transposition",
+					"entries": [
+						"Lord Osiris teleports up to 30 feet to an unoccupied space he can see. Alternatively, he can choose a space within range that is occupied by a Small or Medium creature. If that creature is willing, both creatures teleport, swapping places. Lord Osiris can use this feature again only after he finishes a long rest or casts a conjuration spell of 1st level or higher."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Cantrip",
+					"entries": [
+						"Lord Osiris casts a cantrip."
+					]
+				},
+				{
+					"name": "Paralyzing Touch (Costs 2 Actions)",
+					"entries": [
+						"Lord Osiris uses Paralyzing Touch."
+					]
+				},
+				{
+					"name": "Frightening Gaze (Costs 2 Actions)",
+					"entries": [
+						"Lord Osiris fixes his gaze on one creature he can see within 10 feet of him. The target must succeed on a {@dc 17} Wisdom saving throw against this magic or become {@condition frightened} for 1 minute. The {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to Lord Osiris's gaze for the next 24 hours."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/Etwg4O2.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/oNan6QI.png",
+			"traitTags": [
+				"Legendary Resistances",
+				"Rejuvenation",
+				"Turn Resistance"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"C"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"conditionInflict": [
+				"frightened",
+				"paralyzed"
+			],
+			"conditionInflictSpell": [
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"name": "Lord Ulrika",
+			"group": "Lycanthropes",
+			"isNpc": true,
+			"source": "NoblesoftheNorth",
+			"size": "M",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				{
+					"special": "Unknown"
+				}
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 170,
+				"formula": "20d8 + 80"
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "(40 ft. in hybrid form, 50 ft. in dire wolf form)"
+				}
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 14,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"dex": "+9",
+				"con": "+9",
+				"cha": "+8"
+			},
+			"skill": {
+				"perception": "+13",
+				"stealth": "+9"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 23,
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"All (can't speak in wolf form)"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"name": "Blood Frenzy",
+					"entries": [
+						"Lord Ulrika has advantage on attack rolls against a creature that doesn't have all its hit points."
+					]
+				},
+				{
+					"name": "Legendary Resistance (2/Day)",
+					"entries": [
+						"When Lord Ulrika fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Lord Ulrika regains 10 hit points at the start of each of its turns. If Lord Ulrika takes damage from a silver weapon, this trait doesn't function at the start of Lord Ulrika's next turn. Lord Ulrika dies only if it starts its turn with 0 hit points and doesn't regenerate."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Lord Ulrika makes two attacks: two with its Longsword (humanoid form) or one with its Bite and one with its Claws (dire wolf or hybrid form)."
+					]
+				},
+				{
+					"name": "Bite (Dire Wolf or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) piercing damage plus 14 ({@damage 4d6}) necrotic damage. If the target is a Humanoid, it must succeed on a {@dc 17} Constitution saving throw or be cursed with lycanthropy."
+					]
+				},
+				{
+					"name": "Claws (Dire Wolf or Hybrid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage. If the target is a creature, it must succeed on a {@dc 17} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Longsword (Humanoid Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage, or 15 ({@damage 2d10 + 4}) slashing damage if used with two hands."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Change Shape",
+					"entries": [
+						"Lord Ulrika polymorphs into a Large wolf-humanoid hybrid or into a Large dire wolf, or back into its true form, which appears humanoid. Its statistics, other than its size and speed, are the same in each form. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Swipe",
+					"entries": [
+						"Lord Ulrika makes one Claws attack (dire wolf or hybrid form only) or one Longsword attack (humanoid form only)."
+					]
+				},
+				{
+					"name": "Mauling Pounce (Costs 2 Actions)",
+					"entries": [
+						"Lord Ulrika moves up to its speed without provoking opportunity attacks, and it can make one Claws attack (dire wolf or hybrid form only) or one Longsword attack (humanoid form only) against each creature it moves past."
+					]
+				},
+				{
+					"name": "Bite (Costs 3 Actions)",
+					"entries": [
+						"Lord Ulrika changes into hybrid or dire wolf form and then makes one Bite attack."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://i.imgur.com/b9E8IaI.png"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://i.imgur.com/ul7eGQE.png",
+			"traitTags": [
+				"Legendary Resistances",
+				"Regeneration"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Shapechanger"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}
